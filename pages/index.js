@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import Head from "next/head";
 import Contact from "../components/contact";
 import Hero from "../components/hero";
@@ -23,6 +24,7 @@ function App() {
           <WhatWeDo />
           <WhatYourAudienceGet />
           <Contact />
+          <Footer />
         </div>
       </main>
     </>
