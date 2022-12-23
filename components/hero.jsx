@@ -1,3 +1,4 @@
+import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "framer-motion";
 import Header from "./header";
 
@@ -5,29 +6,37 @@ function Hero() {
   return (
     <main className='h-screen flex flex-col'>
       <Header />
-      <section id='hero' className='grow flex flex-col justify-center'>
-        <div className='flex flex-col items-center gap-16 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12'>
-          <div className='flex flex-col items-center gap-4'>
+      <section id='hero' className='h-screen flex flex-col justify-center'>
+        <div className='grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
+          <div className='mr-auto place-self-center lg:col-span-7'>
             <motion.div
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1 }}
             >
-              <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white'>
+              <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white'>
                 We grow your social media presence.
               </h1>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'>
+              <p className='max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
                 Here at Positive Growth, we are dedicated to providing solutions
                 to help you grow your social media presence.
               </p>
             </motion.div>
           </div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className=' lg:mt-0 lg:col-span-5 lg:flex'
+          >
+            <Player
+              autoplay
+              loop
+              src='https://assets10.lottiefiles.com/packages/lf20_osdxlbqq.json'
+            />
+          </motion.div>
+        </div>
+        <div className='flex flex-row justify-center mt-8'>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,7 +49,7 @@ function Hero() {
             }}
           >
             <svg
-              class='w-6 h-6 text-violet-500'
+              className='w-6 h-6 text-violet-500'
               fill='none'
               stroke-linecap='round'
               stroke-linejoin='round'

@@ -67,7 +67,7 @@ function WhatWeDo() {
           }}
         >
           <svg
-            class='w-6 h-6 text-violet-500'
+            className='w-6 h-6 text-violet-500'
             fill='none'
             stroke-linecap='round'
             stroke-linejoin='round'

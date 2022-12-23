@@ -61,13 +61,13 @@ function WhatYourAudienceGet() {
           transition={{ duration: 1 }}
           className='cursor-pointer animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center'
           onClick={() => {
-            window.document.getElementById("whatwedo").scrollIntoView({
+            window.document.getElementById("contact").scrollIntoView({
               behavior: "smooth",
             });
           }}
         >
           <svg
-            class='w-6 h-6 text-violet-500'
+            className='w-6 h-6 text-violet-500'
             fill='none'
             stroke-linecap='round'
             stroke-linejoin='round'
