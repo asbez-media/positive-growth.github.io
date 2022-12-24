@@ -19,8 +19,8 @@ function Hero() {
                 We grow your social media presence.
               </h1>
               <p className='max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
-                Here at Positive Growth, we are dedicated to providing solutions
-                to help you grow your social media presence.
+                Here at NoteWorthy, we are dedicated to providing solutions to
+                help you grow your social media presence.
               </p>
               <NameAndEmail />
             </motion.div>

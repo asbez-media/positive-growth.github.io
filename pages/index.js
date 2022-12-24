@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Head>
-        <title>Positive Growth</title>
+        <title>NoteWorthy</title>
         <meta
           name='description'
           content='Make your social media profiles grow and attract more audience.'

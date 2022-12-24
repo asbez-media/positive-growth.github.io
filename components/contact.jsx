@@ -19,7 +19,7 @@ function Contact() {
         {
           from_name: name,
           from_email: email,
-          to_name: "Positive Growth Support",
+          to_name: "NoteWorthy Support",
           message: message,
           reply_to: email,
         },
