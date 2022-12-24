@@ -31,7 +31,7 @@ function WhatYourAudienceGet() {
             }
           />
           <Card
-            title='Confidence'
+            title='Loyalty'
             description='We teach you to make your audience feel confident about you, by making them confident about the content you make.'
             icon={
               <Player

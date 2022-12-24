@@ -32,7 +32,7 @@ function WhatWeDo() {
           />
           <Card
             title='Video Editing'
-            description='We have a team of video editors to help you create high quality videos for your social media accounts.'
+            description='We have a team of expert video editors to help you create high quality videos for your social media accounts.'
             icon={
               <Player
                 autoplay
