@@ -21,7 +21,11 @@ function Header() {
                 </span>
               </Link>
             </motion.div>
-            <div className='flex items-center lg:order-2'>
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className='flex items-center lg:order-2'>
               <Button
                 onClick={() => {
                   window.document.getElementById("contact").scrollIntoView({
@@ -31,7 +35,7 @@ function Header() {
               >
                 Get Started
               </Button>
-            </div>
+            </motion.div>
             <div
               className='hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1'
               id='mobile-menu-2'
@@ -39,7 +43,7 @@ function Header() {
               <ul className='flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0'>
                 <li>
                   <motion.div
-                    initial={{ opacity: 0, x: 100 }}
+                    initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                     onClick={() => {
@@ -54,7 +58,7 @@ function Header() {
                 </li>
                 <li>
                   <motion.div
-                    initial={{ opacity: 0, x: 100 }}
+                    initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                     onClick={() => {
