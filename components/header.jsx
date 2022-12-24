@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Button } from "flowbite-react";
 
 /* eslint-disable @next/next/no-img-element */
 function Header() {
@@ -20,6 +21,17 @@ function Header() {
                 </span>
               </Link>
             </motion.div>
+            <div class='flex items-center lg:order-2'>
+              <Button
+                onClick={() => {
+                  window.document.getElementById("contact").scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Get Started
+              </Button>
+            </div>
             <div
               className='hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1'
               id='mobile-menu-2'

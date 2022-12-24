@@ -1,6 +1,7 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import { motion } from "framer-motion";
 import Header from "./header";
+import NameAndEmail from "./nameEmail";
 
 function Hero() {
   return (
@@ -21,6 +22,7 @@ function Hero() {
                 Here at Positive Growth, we are dedicated to providing solutions
                 to help you grow your social media presence.
               </p>
+              <NameAndEmail />
             </motion.div>
           </div>
           <motion.div
